@@ -17,7 +17,7 @@ concurrency:
 jobs:
   test_gdal_latest:
     name: GDAL Latest
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     container: osgeo/proj:9.1.0
     env:
       GDAL_DIR: ${{ github.workspace }}/gdal_install
