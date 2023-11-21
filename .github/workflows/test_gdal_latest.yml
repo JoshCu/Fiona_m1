@@ -1,6 +1,7 @@
 name: Test GDAL Latest
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master, 'maint-*' ]
   schedule:
